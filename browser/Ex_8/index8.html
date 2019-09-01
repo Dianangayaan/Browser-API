@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <script>
+                let count = 0;
+                let result = 0;
+              window.alert('This program adds all the numbers you input');
+              let aproval = window.confirm('Do you like to start?');
+              if (aproval) {
+                  do {
+                      let number = window.prompt('Please Enter a number');
+                      if (typeof (parseFloat(number)) === "number") {
+                          result = result + parseFloat(number);
+                          window.alert(`The result so far is: ${result}`)
+                          count = count + 1;
+                      } else {
+                          window.alert('You should enter a number');
+                      }
+                  } while (window.confirm('Do you like to continue'));
+                  let average = result / count;
+                  window.alert(`The final result is:${result}\n The user input ${count} numbers\n The average is: ${average}`)
+              }
+            </script>
+    <title>Exercise 8</title>
+</head>
+<body>
+    <h1>Ex 8</h1>
+</body>
+</html>
+

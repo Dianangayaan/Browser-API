@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <script>
+        const userName = prompt('Enter your username');
+        const message = function (name) {
+            window.alert(` ${name} has been in  this site  for 5 seconds`);
+        }
+        const idTimeout = setTimeout(10000);
+        clearTimeout(idTimeout);
+        const confimation = confirm('Do you still want to be logged?');
+        if (confimation) {
+            alert(`${userName} your session has been restored`);
+        } else {
+            alert(`${userName} your session has expaired`);
+        }
+    </script>
+     <title>Exercise 11</title>
+ </head>
+ <body>
+     <h1>Ex 11</h1>
+ </body>
+ </html>
