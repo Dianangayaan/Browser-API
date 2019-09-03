@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <script>
+                const timer = prompt('Enter the number of seconds that you would like to stay in our site?');
+                let number = 5;
+                const showMessage = () => {
+               console.log(`you have been here for ${number} second`);
+               number +=1;
+               if (number == timer) {
+                   clearInterval(id);
+                   console.log('Your session has expired, come again soon!');
+               }
+             }
+                 const id = setInterval(showMessage, 1000);
+            </script>
+     <title>Exercise 13</title>
+ </head>
+ <body>
+     <h1>Ex 13</h1>
+ </body>
+ </html>
+ 
